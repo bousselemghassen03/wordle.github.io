@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/wordle.css">
+    <script src="js/wordle.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Wordle</h1>
+    <hr>
+    <br>
+    <div id="board"></div>
+    <button id="refreshButton">nouveau mot</button>
+    <br>
+    <h1 id="answer"></h1>
+
+    <!-- Load your JavaScript code here -->
+    <script>
+        // Get a reference to the refresh button
+        const refreshButton = document.getElementById("refreshButton");
+
+        // Add a click event listener to the button
+        refreshButton.addEventListener("click", function () {
+            // Reload the current page
+            location.reload();
+        });
+    </script>
+</body>
+</html>
